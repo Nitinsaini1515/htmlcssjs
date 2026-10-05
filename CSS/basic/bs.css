@@ -1,0 +1,30 @@
+
+/* .box{
+  padding: 10px;
+  border: 2px solid black;
+  height: 100px;
+  width: 300px;
+}
+.inside{
+  display: flex; */
+  /* border: 2px solid black;
+  padding: 10px;
+  margin: 20px; */
+  /* box-sizing: border-box; */
+  /* background-color: red;
+  justify-content: center;
+  align-items: center; */
+/* } */
+/* box sizing border box btata ha ke jo ye height hai wo pading and height ko include karke hai epect margin */
+.inside{
+  /* font-family: sans-serif; */
+  /* font-size: large; */
+  
+  /* font-weight: 300; */
+/* font-weight: 800; */
+/* font-display: block; */
+/* text-align: left; */
+/* text-transform: capitalize; */
+/* text-decoration: dashed; */
+/* box-sizing: border-box; */
+}
