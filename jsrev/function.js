@@ -106,4 +106,70 @@
 // console.log(obj.fun("Harsh"))
 // console.log(obj.obj1.myfun())
 // const func = ()=>{console.log(this)}
+
+
+// arrow function
+
+
+
+// const func = ()=>{
+// console.log(this)
+//   console.log("Hey how are you")
+// }
 // func()
+
+// const obj ={
+//   name:"Nitin saini",
+//   func : ()=>{
+//     console.log(this)
+//   },
+//   functwo: function myfunc(){
+//     console.log(this)
+//   }
+// }
+
+// obj.func()
+// obj.functwo()
+
+
+// const obj ={
+//   name:"Nitin saini",
+//   func:function myfunc(){
+//     const func = ()=>{
+//       console.log(this.name)
+//     }
+//     func();
+//   }
+// }
+// obj.func()
+
+// const obj = (num1,num2)=> num1+num2;
+// console.log(obj(10,20))
+
+// const obj = (num1,num2)=> {num1+num2};
+// console.log(obj(10,20))
+
+
+// const obj = (num1,num2)=> (num1+num2);
+// console.log(obj(10,20))
+
+
+// const obj = ()=> ({name:"Nitin saini"});
+// console.log(obj())
+
+// IIFE(imedeately invoked function expression)
+
+
+// (function myfunc(){
+//   console.log("Hello")
+// })();
+
+// (function myfunc(){
+//   console.log("Hello")
+// })()
+
+
+
+// (function myfunc(name){
+//   console.log(`Username is ${name}`)
+// })("Hitesh")
