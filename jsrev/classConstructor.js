@@ -46,3 +46,21 @@
 // const obji = new ext(20,"Nitin saini")
 // obji.pr()
 // problem ->agar usper na use kare to child class initialize hi nhi kar payegi parent class ke constructor ko
+
+
+// static ->it belong from the class not from the object 
+
+// class User{
+//   constructor(username,age){
+//     this.username = username,
+//     this.age = age
+//   }
+//   static type = "Developer"
+//   static pr (){
+//     console.log(`Type is ${this.type}`)
+//   }
+// }
+// const newOne = new User("Karan saini",20)
+// newOne.pr()
+// User.pr()
+
