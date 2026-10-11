@@ -1,0 +1,112 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e8edf3;
+            padding: 20px;
+        }
+
+        .calculator {
+            width: 380px;
+            max-width: 100%;
+            padding: 20px;
+            background: #1e293b;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        #display {
+            width: 100%;
+            height: 75px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: #f8fafc;
+            color: #0f172a;
+            text-align: right;
+            font-size: 26px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 9px;
+        }
+
+        button {
+            height: 52px;
+            border: none;
+            border-radius: 9px;
+            background: #334155;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #475569;
+        }
+
+        .scientific {
+            background: #475569;
+            color: #bae6fd;
+        }
+
+        .operator {
+            background: #f59e0b;
+            color: #111827;
+        }
+
+        .operator:hover {
+            background: #d97706;
+        }
+
+        .clear {
+            background: #ef4444;
+        }
+
+        .clear:hover {
+            background: #dc2626;
+        }
+
+        .equal {
+            background: #22c55e;
+            color: #052e16;
+        }
+
+        .equal:hover {
+            background: #16a34a;
+        }
+
+        @media (max-width: 400px) {
+            .calculator {
+                padding: 12px;
+            }
+
+            .buttons {
+                gap: 6px;
+            }
+
+            button {
+                height: 46px;
+                font-size: 15px;
+            }
+        }
+ 
