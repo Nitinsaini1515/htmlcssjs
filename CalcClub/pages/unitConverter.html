@@ -1,13 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit Converter</title>
-</head>
-<body>
-  <div class="container"></div>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="lengthContainer">
+        <div class="inputBoxOneDiv">
+          <label for="inputBoxOne">From</label>
+          <input
+            type="number"
+            class="inputBoxOne"
+            id="inputBoxOne"
+            placeholder="Enter length"
+          />
 
-<!-- 2000 pent , 500 rashan ,  -->
+          <select class="optionsOne">
+            <option value="Meter">Meter (m)</option>
+            <option value="Kilometer">Kilometer (km)</option>
+            <option value="Centimeter">Centimeter (cm)</option>
+            <option value="Millimeter">Millimeter (mm)</option>
+            <option value="Feet">Feet (ft)</option>
+            <option value="Inches">Inches (in)</option>
+            <option value="Miles">Miles (mi)</option>
+          </select>
+        </div>
+
+        <div class="inputBoxTwoDiv">
+          <label for="inputBoxTwo">To</label>
+
+          <select class="optionsTwo" id="inputBoxTwo">
+            <option value="Meter">Meter (m)</option>
+            <option value="Kilometer">Kilometer (km)</option>
+            <option value="Centimeter">Centimeter (cm)</option>
+            <option value="Millimeter">Millimeter (mm)</option>
+            <option value="Feet">Feet (ft)</option>
+            <option value="Inches">Inches (in)</option>
+            <option value="Miles">Miles (mi)</option>
+          </select>
+        </div>
+
+        <div class="resultDiv">
+          <button class="resultButton">Convert</button>
+
+          <div class="inputBox">
+            <label for="resultBox">Result</label>
+            <input type="text" id="resultBox" class="resultBox" readonly />
+          </div>
+        </div>
+      </div>
+
+      <!-- weight converter -->
+      <div class="weightConverter">
+        <div class="inputBoxOneDivWeight">
+          <label for="weightInput">From</label>
+          <input
+            type="number"
+            class="weightInput"
+            id="weightInput"
+            placeholder="Enter weight"
+          />
+
+          <select class="weightOptionsOne">
+            <option value="Kilogram">Kilogram (kg)</option>
+            <option value="Gram">Gram (g)</option>
+            <option value="Milligram">Milligram (mg)</option>
+            <option value="Pound">Pound (lb)</option>
+            <option value="Ounce">Ounce (oz)</option>
+          </select>
+        </div>
+
+        <div class="inputBoxTwoDivWeight">
+          <label for="weightOutputUnit">To</label>
+
+          <select class="weightOptionsTwo" id="weightOutputUnit">
+            <option value="Kilogram">Kilogram (kg)</option>
+            <option value="Gram">Gram (g)</option>
+            <option value="Milligram">Milligram (mg)</option>
+            <option value="Pound">Pound (lb)</option>
+            <option value="Ounce">Ounce (oz)</option>
+          </select>
+        </div>
+
+        <div class="resultDivWeight">
+          <button class="weightResultButton">Convert</button>
+
+          <div class="inputBoxWeight">
+            <label for="weightResultBox">Result</label>
+            <input
+              type="text"
+              id="weightResultBox"
+              class="weightResultBox"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="areaConverter">
+        <div class="inputBoxOneDivArea">
+          <label for="areaInput">From</label>
+          <input
+            type="number"
+            class="areaInput"
+            id="areaInput"
+            placeholder="Enter area"
+          />
+
+          <select class="areaOptionsOne">
+            <option value="SquareMeter">Square Meter (m²)</option>
+            <option value="SquareKilometer">Square Kilometer (km²)</option>
+            <option value="SquareCentimeter">Square Centimeter (cm²)</option>
+            <option value="SquareMillimeter">Square Millimeter (mm²)</option>
+            <option value="SquareFoot">Square Foot (ft²)</option>
+            <option value="Acre">Acre</option>
+            <option value="Hectare">Hectare (ha)</option>
+          </select>
+        </div>
+
+        <div class="inputBoxTwoDivArea">
+          <label for="areaOutputUnit">To</label>
+
+          <select class="areaOptionsTwo" id="areaOutputUnit">
+            <option value="SquareMeter">Square Meter (m²)</option>
+            <option value="SquareKilometer">Square Kilometer (km²)</option>
+            <option value="SquareCentimeter">Square Centimeter (cm²)</option>
+            <option value="SquareMillimeter">Square Millimeter (mm²)</option>
+            <option value="SquareFoot">Square Foot (ft²)</option>
+            <option value="Acre">Acre</option>
+            <option value="Hectare">Hectare (ha)</option>
+          </select>
+        </div>
+
+        <div class="resultDivArea">
+          <button class="areaResultButton">Convert</button>
+
+          <div class="inputBoxArea">
+            <label for="areaResultBox">Result</label>
+            <input
+              type="text"
+              id="areaResultBox"
+              class="areaResultBox"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
