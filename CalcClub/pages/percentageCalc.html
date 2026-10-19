@@ -4,79 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Percantage Calculator</title>
+  <link rel="stylesheet" href="../style/percentageCalc.css">
 </head>
 <body>
 
+<div class="container">
+  <div class="mainContainer">
+<div class="firstDiv">
 
-  <div class="conatinerOne">
+  <div class="containerOne">
     <!-- Find Percentage -->
      <div class="basicPercentage">
-
-      <div class="inputDiv">
-        <label for="numberOne">Number</label>
-         <input type="text" required class="numberOne" >
-         <label  for="numberTwo">Percentage</label>
-         <input required type="text" class="numberTwo">
-      </div>
-        <button class="resultOne"> Calculate</button>
-        <input type="text" id="ansBoxOne" readonly>
-     </div>
-
-
     
-  </div>
+  <h3>Calculate a Percentage</h3>
+  <p>Find the percentage of any number quickly and easily.</p>
+      <div class="inputDiv">
 
+        <label for="numberOne">Enter Number</label>
+         <input type="text" placeholder="Enter Number" required class="numberOne" >
+         <label  for="numberTwo">Enter Percentage (%)</label>
+         <input required placeholder="Enter Percentage (%)" type="text" class="numberTwo">
+      </div>
+      <div class="resultDiv">
+        <button class="resultOne"> Calculate</button>
+        <input type="text" id="ansBoxOne" placeholder="Result" readonly>
+              </div>
+     </div>
+       <p class="formulaText">Formula: (Number × Percentage) ÷ 100</p>
+
+    </div>
   <div class="containerTwo">
 
-  <div class="partPercentage">
+  
+<div class="partPercentage">
 
-      <div class="inputDivTwopart">
-        <label for="numberOnePart">Part</label>
-         <input type="text" required class="numberOnePart" >
-         <label  for="numberTwoPart">Total</label>
-         <input required type="text" class="numberTwoPart">
-      </div>
-        <button class="resultOnePart"> Calculate</button>
-        <input type="text" id="ansBoxOnePart" readonly>
-     </div>
+  <h3>Find What Percentage One Number Is of Another</h3>
+  <p>Calculate what percentage a part represents of the total.</p>
+
+  <div class="inputDivTwopart">
+    <label for="numberOnePart">Enter Part</label>
+    <input type="number" required id="numberOnePart"
+           class="numberOnePart" placeholder="e.g. 25">
+
+    <label for="numberTwoPart">Enter Total</label>
+    <input type="number" required id="numberTwoPart"
+           class="numberTwoPart" placeholder="e.g. 100">
+  </div>
+
+  <div class="resultDiv">
+    <button class="resultOnePart">Calculate</button>
+    <label for="ansBoxOnePart">Result (%)</label>
+    <input type="text" id="ansBoxOnePart"
+           placeholder="Your result will appear here" readonly>
+  </div>
+
+  <p class="formulaText">
+    Formula: (Part ÷ Total) × 100
+  </p>
+
+</div>
+
 
 
   </div>
 
-
+  </div>
   <!-- Increase Decrease Calculator -->
+<div class="secondDiv">
 
+</div>
   <div class="containerThree">
-    
+        <h3>Percentage Increase or Decrease</h3>
+    <p>Calculate how much a value has increased or decreased between two numbers.</p>
     <div class="incDecPercentage">
       <div class="inputDivIncDec">
-        <label for="numberOneIncDec">Part</label>
-         <input type="text" required class="numberOneIncDec" >
-         <label  for="numberTwoIncDec">Total</label>
-         <input required type="text" class="numberTwoIncDec">
+        <label for="numberOneIncDec">Orignal Value</label>
+         <input type="number" required class="numberOneIncDec" placeholder="e.g. 200" >
+         <label  for="numberTwoIncDec">New Value</label>
+         <input required type="number" class="numberTwoIncDec" placeholder="e.g. 250">
       </div>
+      <div class="resultDiv">
         <button class="resultIncDec"> Calculate</button>
-        <input type="text" id="ansBoxIncDec" readonly>
+        <input type="text"  placeholder="Your result will appear here" id="ansBoxIncDec" readonly>
+        </div>
      </div>
-
+      <p class="formulaText">
+      Formula: ((New Value − Original Value) ÷ Original Value) × 100
+    </p>
   </div>
 
 
   <div class="containerFour">
-    
     <div class="diffDiv">
+      <h3>Percentage Difference Calculator</h3>
+      <p>Find the percentage difference between two values quickly and easily.</p>
       <div class="inputDivDiff">
         <label for="numberOneDiff">Part</label>
          <input type="text" required class="numberOneDiff" >
          <label  for="numberTwoDiff">Total</label>
          <input required type="text" class="numberTwoDiff">
       </div>
+      <div class="resultDiv">
         <button class="resultDiff"> Calculate</button>
         <input type="text" id="ansBoxDiff" readonly>
+      </div>
      </div>
+         <p class="formulaText">
+      Formula: (|First Value − Second Value| ÷ Average of Both Values) × 100
+    </p>
 
   </div>
-
+  </div>
+  </div>
+</div>
 </body>
 <script src="../js/percentageCalc.js"></script>
 </html>

@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #334155;
+  --secondary-color: #64748b;
+  --text-color: #222222;
+  --background-color: #f8fafc;
+  --text-color-white: #ffffff;
+  --background-color-white: #ffffff;
+  --card-color: #ffffff;
+  --border-color: #e5e5e5;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftSide {
+  padding: 15px;
+  /* margin-top: ; */
+  background-color: red;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  min-height: 550px;
+  width: 500px;
+  /* top: 50px; */
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputDiv input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5%;
+  height: 40px;
+  outline: none;
+}
+
+.calcAge{
+  margin: 20px auto;
+height: 40px;
+/* background-color: transparent; */
+width: 100%;
+background-color: var(--background-color-white);
+}
+.resultBox{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.result{
+  align-content: center;
+  /* align-items: center; */
+  height: 40px;
+  border:2px solid var(--border-color);
+}
+
+.yourLifeTimeReuslt{
+    align-content: center;
+
+  height: 70px;
+  border:2px solid var(--border-color);
+}
+
+
+.rightSide{
+  padding: 20px;
+  border-radius: 5%;
+  width: 700px;
+  border: 2px solid var(--border-color);
+  /* background-color: red; */
+  background-color: var(--background-color-white);
+  min-width: 500px;
+}

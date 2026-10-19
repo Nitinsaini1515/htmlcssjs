@@ -1,0 +1,345 @@
+:root {
+  --primary-color: #334155;
+  --secondary-color: #64748b;
+  --text-color: #222222;
+  --background-color: #f8fafc;
+  --text-color-white: #ffffff;
+  --background-color-white: #ffffff;
+  --card-color: #ffffff;
+  --border-color: #e5e5e5;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainContainer {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  width: 1400px;
+  max-width: 100%;
+  min-height: fit-content;
+  min-width: fit-content;
+  padding: 30px;
+  border: 2px solid var(--border-color);
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.containerOne {
+  width: 500px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.basicPercentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.basicPercentage h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  /* color: rebeccapurple; */
+  color: var(--text-color);
+}
+
+.basicPercentage p {
+  color: var(--text-color);
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDiv input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDiv input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultDiv button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiv input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.containerTwo {
+  width: 500px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.partPercentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.partPercentage h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  /* color: rebeccapurple; */
+  color: var(--text-color);
+}
+
+.partPercentage p {
+  color: var(--text-color);
+}
+.inputDivTwopart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDivTwopart input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDivTwopart input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultDiv button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiv input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+
+.containerThree {
+  width: 500px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.incDecPercentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.incDecPercentage h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  /* color: rebeccapurple; */
+  color: var(--text-color);
+}
+
+.incDecPercentage p {
+  color: var(--text-color);
+}
+.inputDivIncDec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDivIncDec input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDivIncDec input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultIncDec button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiv input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.containerThree {
+  width: 500px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.incDecPercentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.incDecPercentage h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  /* color: rebeccapurple; */
+  color: var(--text-color);
+}
+
+.incDecPercentage p {
+  color: var(--text-color);
+}
+.inputDivIncDec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDivIncDec input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDivIncDec input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultIncDec button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiv input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+
+.containerFour {
+  width: 500px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.diffDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.diffDiv h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  /* color: rebeccapurple; */
+  color: var(--text-color);
+}
+
+.diffDiv p {
+  color: var(--text-color);
+}
+.inputDivDiff {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDivDiff input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDivDiff input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultDiff button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiff input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}

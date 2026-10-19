@@ -1,43 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temperature Calculator</title>
-</head>
-<body>
-
-
-<div class="container">
-  <div class="inputBoxOneDiv">
-    <label for="inputBoxOne">From</label>
-    <input type="number" class="inputBoxOne" id="inputBoxOne" placeholder="Enter temperature">
-    <select class="optionsOne">
-      <option value="Celsius">Celsius (°C)</option>
-      <option value="Fahrenheit">Fahrenheit (°F)</option>
-      <option value="Kelvin">Kelvin (K)</option>
-    </select>
-  </div>
-
-  <div class="inputBoxTwoDiv">
-    <label for="inputBoxTwo">To</label>
-    <select class="optionsTwo" id="inputBoxTwo">
-      <option value="Celsius">Celsius (°C)</option>
-      <option value="Fahrenheit">Fahrenheit (°F)</option>
-      <option value="Kelvin">Kelvin (K)</option>
-    </select>
-  </div>
-
-  <div class="resultDiv">
-    <button class="resultButton">Calculate</button>
-
-    <div class="inputBox">
-      <label for="resultBox">Result</label>
-      <input type="text" id="resultBox" class="resultBox" readonly>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputBoxOneDiv">
+        <label for="inputBoxOne">From</label>
+        <input
+          type="number"
+          class="inputBoxOne"
+          id="inputBoxOne"
+          placeholder="Enter temperature"
+        />
+        <select class="optionsOne">
+          <option value="Celsius">Celsius (°C)</option>
+          <option value="Fahrenheit">Fahrenheit (°F)</option>
+          <option value="Kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+      <div class="inputBoxTwoDiv">
+        <label for="inputBoxTwo">To</label>
+        <select class="optionsTwo" id="inputBoxTwo">
+          <option value="Celsius">Celsius (°C)</option>
+          <option value="Fahrenheit">Fahrenheit (°F)</option>
+          <option value="Kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+      <div class="resultDiv">
+        <button class="resultButton">Calculate</button>
+        <div class="inputBox">
+          <label for="resultBox">Result</label>
+          <input type="text" id="resultBox" class="resultBox" readonly />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-
-</body>
+  </body>
 </html>
