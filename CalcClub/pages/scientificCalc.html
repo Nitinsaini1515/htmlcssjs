@@ -1,69 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <div class="inputDiv">
-      <label for="inputBox">Result </label>
-      <input type="text" name="" id="" class="inputBox">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Calculator</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="../style/scientificCalc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainDiv">
+        <div class="inputDiv">
+          <label for="inputBox">Result </label>
+          <input type="text" name="" id="" class="inputBox" />
+        </div>
+        <div class="buttons">
+          <button data-value="sin">sin</button>
+          <button data-value="cos">cos</button>
+          <button data-value="tan">tan</button>
+          <button data-value="log">log</button>
+          <button data-value="ln">ln</button>
+
+          <button data-value="sqrt">√</button>
+          <button data-value="square">x²</button>
+          <button data-value="power">xʸ</button>
+          <button data-value="factorial">x!</button>
+          <button data-value="pi">π</button>
+
+          <button data-value="e">e</button>
+          <button data-value="open">(</button>
+          <button data-value="close">)</button>
+          <button data-value="percent">%</button>
+          <button data-value="divide">÷</button>
+
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="multiply">×</button>
+          <button data-value="delete">DEL</button>
+
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="subtract">−</button>
+          <button data-value="clear">AC</button>
+
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="add">+</button>
+          <button data-value="ans">ANS</button>
+
+          <button data-value="exp">EXP</button>
+          <button data-value="reciprocal">1/x</button>
+          <button data-value="cube">x³</button>
+          <button data-value="cuberoot">∛</button>
+          <button data-value="0">0</button>
+
+          <button data-value="decimal">.</button>
+          <button data-value="negative">+/−</button>
+          <button data-value="equals">=</button>
+          <button data-value="backspace">⌫</button>
+        </div>
+      </div>
+      <div class="scientificRight">
+        <h1>ADVANCED MATH, MADE SIMPLE</h1>
+        <h2>Solve beyond the basics.</h2>
+        <div>
+          Explore advanced mathematical calculations with CalcClub's Scientific
+          Calculator. From trigonometry and logarithms to powers, roots, and
+          complex expressions, solve problems quickly and accurately.
+        </div>
+        <br />
+        <div>
+          Powerful. Precise. Easy to use. Your everyday companion for advanced
+          mathematics.
+        </div>
+        <div>
+          <div>HOW IT WORKS Example:</div>
+          <p>Calculate sin(30°)</p>
+          <p>Select degree mode (DEG).</p>
+
+          <p>Enter sin(30).</p>
+          <p>Press = to get the result.</p>
+          <p>Result: sin(30°) = 0.5</p>
+        </div>
+      </div>
     </div>
-    <div class="buttons">
-  <div class="buttons">
-  <button data-value="sin">sin</button>
-  <button data-value="cos">cos</button>
-  <button data-value="tan">tan</button>
-  <button data-value="log">log</button>
-  <button data-value="ln">ln</button>
-
-  <button data-value="sqrt">√</button>
-  <button data-value="square">x²</button>
-  <button data-value="power">xʸ</button>
-  <button data-value="factorial">x!</button>
-  <button data-value="pi">π</button>
-
-  <button data-value="e">e</button>
-  <button data-value="open">(</button>
-  <button data-value="close">)</button>
-  <button data-value="percent">%</button>
-  <button data-value="divide">÷</button>
-
-  <button data-value="7">7</button>
-  <button data-value="8">8</button>
-  <button data-value="9">9</button>
-  <button data-value="multiply">×</button>
-  <button data-value="delete">DEL</button>
-
-  <button data-value="4">4</button>
-  <button data-value="5">5</button>
-  <button data-value="6">6</button>
-  <button data-value="subtract">−</button>
-  <button data-value="clear">AC</button>
-
-  <button data-value="1">1</button>
-  <button data-value="2">2</button>
-  <button data-value="3">3</button>
-  <button data-value="add">+</button>
-  <button data-value="ans">ANS</button>
-
-  <button data-value="0">0</button>
-  <button data-value="decimal">.</button>
-  <button data-value="negative">+/−</button>
-  <button data-value="equals">=</button>
-  <button data-value="backspace">⌫</button>
-
-  <button data-value="exp">EXP</button>
-  <button data-value="reciprocal">1/x</button>
-  <button data-value="cube">x³</button>
-  <button data-value="cuberoot">∛</button>
-</div>
-
-
-    </div>
-  </div>
-</body>
-<script src="../js/scientificCalc.js"></script>
+  </body>
+  <script src="../js/scientificCalc.js"></script>
 </html>

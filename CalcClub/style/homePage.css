@@ -43,6 +43,10 @@ body {
   color: var(--primary-color);
 }
 
+.rightIcons a:hover {
+  color: var(--text-color);
+}
+
 .frontPage {
   /* padding: 800px; */
   /* height: 800px; */
@@ -66,12 +70,13 @@ body {
 
 .imageDiv img {
   border-radius: 10%;
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .leftButton button {
   height: 60px;
   width: 250px;
-  background-color: var(--secondary-color);
+  background-color: var(--text-color);
   border-radius: 5%;
   cursor: pointer;
   padding: 5px;
@@ -93,7 +98,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--primary-color);
+  color: var(--text-color);
   gap: 20px;
 }
 
@@ -143,6 +148,42 @@ body {
   font-weight: 700;
 }
 
+.unitConv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.unitLeftSide {
+  width: 600px;
+  font-size: larger;
+}
+
+.unitRightSide {
+  width: fit-content;
+}
+.unitImage img {
+  border-radius: 5%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.percenConv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.percenLeftSide {
+  width: 600px;
+  font-size: larger;
+}
+
+.percenRightSide {
+  width: fit-content;
+}
+.percenImage img {
+  border-radius: 5%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 .aboutSection {
   width: 100%;
   padding: 70px 8%;
@@ -221,3 +262,9 @@ body {
     padding: 50px 6%;
   }
 }
+
+
+/* Basic Calculator css */
+
+
+
