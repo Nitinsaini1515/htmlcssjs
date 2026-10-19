@@ -3,31 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/emiCalc.css">
   <title>Emi Calculator</title>
 </head>
 <body>
-  
-<div class="container">
 
-  <div class="inputBox">
-    <label for="loanAmount">Loan Amount</label>
-    <input type="text" name="" id="" class="loanAmount">
-    <label for="annualInterest">Annual Interest </label>
-    <input type="text" name="" id="" class="annualInterest">
-    <label for="loanTensure">Loan Tensure</label>
-    <input type="text" name="" id="" class="loanTensure">
+<div class="container">
+  <div class="leftSide">
+    <h1>Emi Calculator</h1>
+    <div class="inputBox">
+      <label for="loanAmount">Loan Amount</label>
+      <input type="text" name="" id="" class="loanAmount">
+
+      <label for="annualInterest">Annual Interest </label>
+      <input type="text" name="" id="" class="annualInterest">
+
+      <label for="loanTensure">Loan Tensure</label>
+      <input type="text" name="" id="" class="loanTensure">
+    </div>
+
+    <div class="resultBox">
+      <button class="resultButton">Calculate</button>
+
+      <label for="monthlyEmi">Monthly EMI</label>
+      <input type="text" class="monthlyEmi">
+
+      <label for="totalInterest">Total Interest</label>
+      <input type="text" class="totalInterest">
+
+      <label for="totalPayment">Total Payment</label>
+      <input type="text" class="totalPayment">
+    </div>
   </div>
-  <div class="resultBox">
-    <button class="resultButton">Calculate</button>
-    <label for="monthlyEmi">Monthly EMI</label>
-    <input type="text" class="monthlyEmi">
-    <label for="totalInterest">Total Interest</label>
-    <input type="text" class="totalInterest">
-    <label for="totalPayment">Total Payment</label>
-    <input type="text" class="totalPayment">
+
+  <div class="rightSide">
+    <h1>LOAN PLANNING, MADE SIMPLE</h1>
+    <h2>Plan your EMIs. Manage your finances.</h2>
+
+    <div>
+      Calculate your monthly loan installments with CalcClub's EMI Calculator.
+      Find your monthly EMI, total interest, and total repayment amount in seconds.
+      Make smarter borrowing decisions with a clear view of your loan costs.
+    </div>
+
+    <h3>Simple. Accurate. Reliable. Plan every payment with confidence.</h3>
+
+    <div>Working Example</div>
+    <p>Loan Amount: ₹5,00,000</p>
+    <p>Annual Interest Rate: 10%</p>
+    <p>Loan Tenure: 5 Years</p>
+    <p>Monthly EMI: ₹10,624 (approx.)</p>
+    <p>Total Interest: ₹1,37,411 (approx.)</p>
+    <p>Total Payment: ₹6,37,411 (approx.)</p>
   </div>
 </div>
-
 
 </body>
 </html>

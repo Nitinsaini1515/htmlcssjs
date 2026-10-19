@@ -4,31 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discount Calculator</title>
+    <link rel="stylesheet" href="../style/discountCalc.css" />
   </head>
   <body>
     <div class="container">
-      <div class="inputDiv">
-        <label for="orignalPriceInput" class="orignalPrice">
-          Orignal Price</label
-        >
-        <input type="text" name="" id="" required class="orignalPriceInput" />
-        <label for="discountPer">Discount(%)</label>
-        <input type="text" name="" id="" required class="discountPer" />
-      </div>
-      <div class="buttons">
-        <button class="calc">Calculate</button>
-        <button class="clear">Clear</button>
-        <button class="copy">Copy</button>
-      </div>
-      <div class="resultDiv">
-        <label for="resultBox">Result</label>
-        <div class="discAmount">
-          <label for="discountedAmount"> Discount Amount</label>
-          <input type="text" name="" id="" class="discountedAmount" />
+      <div class="leftSide">
+        <h1>Discount Calculator</h1>
+        <div class="inputDiv">
+          <label for="orignalPriceInput" class="orignalPrice">
+            Orignal Price</label
+          >
+          <input type="text" name="" id="" required class="orignalPriceInput" />
+          <label for="discountPer">Discount(%)</label>
+          <input type="text" name="" id="" required class="discountPer" />
         </div>
-        <div class="finAmount">
-          <label for="finalAmount"> Final Amount</label>
-          <input type="text" name="" id="" class="finalAmount" />
+        <div class="buttons">
+          <button class="calc">Calculate</button>
+          <button class="clear">Clear</button>
+          <button class="copy">Copy</button>
+        </div>
+        <div class="resultDiv">
+          <label for="resultBox">Result</label>
+          <div class="discAmount">
+            <label for="discountedAmount"> Discount Amount</label>
+            <input type="text" name="" id="" class="discountedAmount" />
+          </div>
+          <div class="finAmount">
+            <label for="finalAmount"> Final Amount</label>
+            <input type="text" name="" id="" class="finalAmount" />
+          </div>
+        </div>
+      </div>
+      <div class="rightSide">
+        <h1>SMART SAVINGS, MADE SIMPLE</h1>
+        <h2>Shop smarter. Save more.</h2>
+
+        <div>
+          Calculate discounts instantly with CalcClub's Discount Calculator.
+          Find your savings and final price in seconds, without doing the math
+          yourself.
+        </div>
+
+        <h3>Simple. Fast. Affordable. Make every purchase count.</h3>
+     <div class="exampleDiv">
+        <div >Working Example</div>
+        <p>Original Price: ₹2,000</p>
+        <p>Discount: 20%</p>
+        <p>You Save: ₹400</p>
+        <p>Final Price: ₹1,600</p>
         </div>
       </div>
     </div>

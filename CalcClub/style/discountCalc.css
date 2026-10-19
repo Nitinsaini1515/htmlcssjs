@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #334155;
+  --secondary-color: #64748b;
+  --text-color: #222222;
+  --background-color: #f8fafc;
+  --text-color-white: #ffffff;
+  --background-color-white: #ffffff;
+  --card-color: #ffffff;
+  --border-color: #e5e5e5;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.leftSide{
+width: 500px;
+border: 2px solid var(--border-color);
+background-color: var(--background-color);
+height: 500px;
+padding: 15px;
+}
+.inputDiv{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.inputDiv input{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.buttons button{
+  width: 32%;
+  height: 50px;
+  padding: 5px;
+  background-color: var(--text-color);
+  color: var(--text-color-white);
+  /* font-weight: bold; */
+  font-size: 20px;
+  border-radius: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.resultDiv{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.resultDiv input{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  border-radius: 5%;
+  padding: 10px;
+} 
+.rightSide{
+  padding: 20px;
+  border-radius: 5%;
+  width: 700px;
+  border: 2px solid var(--border-color);
+  /* background-color: red; */
+  background-color: var(--background-color-white);
+  min-width: 500px;
+}
+
+.exampleDiv{
+  font-family: 'Courier New', Courier, monospace;
+}
