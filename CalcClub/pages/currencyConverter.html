@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../style/currencyConv.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftSide">
+        <h1>Currency Converter</h1>
+        <div class="inputBox">
+          <label for="from">Select Currency From</label>
+          <input type="number" class="inputFrom" />
+          <select name="" id="from"></select>
+          <label for="to">Select Currency To</label>
+          <select name="" id="to"></select>
+          <div class="resultDiv">
+            <button class="calcButton">Calculate</button>
+            <label for="resultBox">Reuslt</label>
+            <input class="resultBox" type="number" />
+          </div>
+        </div>
+      </div>
+
+      <div class="rightSide">
+        <h1>CURRENCY CONVERSION, MADE SIMPLE</h1>
+        <h2>Convert currencies and crypto with ease.</h2>
+
+        <div>
+          Convert traditional currencies like Indian Rupees, US Dollars, Euros,
+          and British Pounds, as well as cryptocurrencies like Bitcoin and
+          Ethereum using exchange rates.
+        </div>
+
+        <br />
+
+        <div>
+          Fast. Simple. Convenient. Your everyday companion for currency and
+          cryptocurrency conversions.
+        </div>
+
+        <div class="exampleDiv">
+          <div>HOW IT WORKS Example:</div>
+          <p>Convert 100 US Dollars to Indian Rupees.</p>
+          <p>Select US Dollar (USD) as the From currency.</p>
+          <p>Select Indian Rupee (INR) as the To currency.</p>
+          <p>Enter 100 and press Convert.</p>
+          <p>Result: 100 USD = equivalent amount in INR.</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/currencyConv.js"></script>
+  </body>
+</html>

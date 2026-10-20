@@ -150,11 +150,21 @@ body {
   box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
 }
 .calcIcon i {
-  font-size: 20px;
-  font-weight: 700;
+  font-size:20px;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  /* font-weight: 400; */
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 35%;
+
 }
 
-.unitConv {
+.unitConv,.currencyConv {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -163,12 +173,12 @@ body {
   color: var(--text-color-white);
   background-color: var(--primary-color);
 }
-.unitLeftSide {
+.unitLeftSide ,.currencyLeftSide{
   width: 600px;
   font-size: larger;
 }
 
-.unitRightSide {
+.unitRightSide,.currencyRightSide {
   width: fit-content;
 }
 .unitImage img {
@@ -190,7 +200,7 @@ body {
 .percenRightSide {
   width: fit-content;
 }
-.percenImage img {
+.percenImage img,.currencyImage img {
   border-radius: 5%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

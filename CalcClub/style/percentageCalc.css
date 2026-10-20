@@ -19,38 +19,28 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
-.mainContainer {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  align-items: center;
-  width: 1400px;
-  max-width: 100%;
-  min-height: fit-content;
-  min-width: fit-content;
-  padding: 30px;
-  border: 2px solid var(--border-color);
-}
-
-.firstDiv {
+.containerOne,.containerTwo ,.containerThree,.containerFour {
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
-}
-.containerOne {
-  width: 500px;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
   padding: 10px;
+  width: 100vw;
 }
 
-.basicPercentage {
+.basicPercentage ,.incDecDiv,.partPercentage,.diffDiv {
   display: flex;
+  height: fit-content;
   flex-direction: column;
+  border:2px solid  var(--border-color);
+  padding: 20px;
+  border-radius: 5%;
+  background-color: var(--background-color);
 }
 
+.containerTwo ,.containerFour{
+  background-color: var(--primary-color);
+}
 .basicPercentage h3 {
   font-size: x-large;
   font-weight: bolder;
@@ -61,6 +51,8 @@ body {
 .basicPercentage p {
   color: var(--text-color);
 }
+
+
 .inputDiv {
   display: flex;
   flex-direction: column;
@@ -99,22 +91,11 @@ body {
   border: 2px solid var(--border-color);
   background-color: transparent;
 }
-.containerTwo {
-  width: 500px;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  padding: 10px;
-}
-
-.partPercentage {
-  display: flex;
-  flex-direction: column;
-}
 
 .partPercentage h3 {
   font-size: x-large;
   font-weight: bolder;
-  /* color: rebeccapurple; */
+
   color: var(--text-color);
 }
 
@@ -161,17 +142,65 @@ body {
 }
 
 
-.containerThree {
+.incDecPercentage h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  
+  color: var(--text-color);
+}
+
+.incDecPercentage p {
+  color: var(--text-color);
+}
+.inputDivIncDec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDivIncDec input {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--border-color);
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputDivIncDec input:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
+}
+
+.resultIncDec button {
+  outline: none;
+  background-color: var(--background-color);
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: transparent;
+}
+.resultDiv input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+/* .containerThree {
   width: 500px;
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
   padding: 10px;
-}
+} */
 
-.incDecPercentage {
+/* .incDecPercentage {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .incDecPercentage h3 {
   font-size: x-large;
@@ -221,79 +250,19 @@ body {
   border: 2px solid var(--border-color);
   background-color: transparent;
 }
-.containerThree {
+
+
+/* .containerFour {
   width: 500px;
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
   padding: 10px;
-}
+} */
 
-.incDecPercentage {
+/* .diffDiv {
   display: flex;
   flex-direction: column;
-}
-
-.incDecPercentage h3 {
-  font-size: x-large;
-  font-weight: bolder;
-  /* color: rebeccapurple; */
-  color: var(--text-color);
-}
-
-.incDecPercentage p {
-  color: var(--text-color);
-}
-.inputDivIncDec {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.inputDivIncDec input {
-  outline: none;
-  width: 100%;
-  border-radius: 5%;
-  border: 1px solid var(--border-color);
-  height: 40px;
-  box-sizing: border-box;
-  background-color: transparent;
-}
-
-.inputDivIncDec input:focus-within {
-  border-color: blue;
-  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
-}
-
-.resultIncDec button {
-  outline: none;
-  background-color: var(--background-color);
-  margin: 10px auto;
-  width: 100%;
-  box-sizing: border-box;
-  height: 40px;
-  background-color: transparent;
-}
-.resultDiv input {
-  width: 100%;
-  box-sizing: border-box;
-  height: 70px;
-  outline: none;
-  border: 2px solid var(--border-color);
-  background-color: transparent;
-}
-
-
-.containerFour {
-  width: 500px;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  padding: 10px;
-}
-
-.diffDiv {
-  display: flex;
-  flex-direction: column;
-}
+} */
 
 .diffDiv h3 {
   font-size: x-large;
@@ -342,4 +311,18 @@ body {
   outline: none;
   border: 2px solid var(--border-color);
   background-color: transparent;
+}
+
+
+
+.rightSide{
+  padding: 20px;
+  border-radius: 5%;
+  width: 700px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color-white);
+  min-width: 500px;
+}
+.exampleDiv{
+  font-family: 'Courier New', Courier, monospace;
 }
