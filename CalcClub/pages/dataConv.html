@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Converter</title>
+    <link rel="stylesheet" href="../style/tempCalc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftSide">
+        <h1>Data Converter</h1>
+        <div class="inputBoxOneDiv">
+          <label for="inputBoxOne">From</label>
+          <input
+            type="number"
+            class="inputBoxOne"
+            id="inputBoxOne"
+            placeholder="Enter Data"
+          />
+          <select class="optionsOne">
+             <option value="Byte">Byte</option>
+            <option value="MB">MB</option>
+            <option value="KB">KB</option>
+            <option value="GB">GB</option>
+            <option value="TB">TB</option>
+          </select>
+        </div>
+        <div class="inputBoxTwoDiv">
+          <label for="inputBoxTwo">To</label>
+          <select class="optionsTwo" id="inputBoxTwo">
+             <option value="Byte">Byte</option>
+           <option value="MB">MB</option>
+            <option value="KB">KB</option>
+            <option value="GB">GB</option>
+            <option value="TB">TB</option>
+          </select>
+        </div>
+        <div class="resultDiv">
+          <button class="resultButton">Convert</button>
+          <div class="inputBox">
+            <label for="resultBox">Result</label>
+            <input type="number" id="resultBox" class="resultBox" readonly />
+          </div>
+        </div>
+      </div>
+      <div class="rightSide">
+  <h1>DATA CONVERSION, MADE SIMPLE</h1>
+  <h2>Convert data in seconds.</h2>
+  <div>
+    Convert digital storage units easily with CalcHub's Data Storage Converter.
+    From bytes and kilobytes to megabytes, gigabytes, and terabytes, convert
+    data sizes quickly and accurately.
+  </div>
+  <br />
+  <div>
+    Simple. Fast. Reliable. Your everyday tool for digital storage conversions.
+  </div>
+  <div class="exampleDiv"> 
+    <div>HOW IT WORKS Example:</div>
+    <p>Convert 1024 KB to MB.</p>
+    <p>Enter 1024 as the value.</p>
+    <p>Select KB in the From dropdown.</p>
+    <p>Select MB in the To dropdown.</p>
+    <p>Press Convert to get the result.</p>
+    <p>Result: 1024 KB = 1 MB</p>
+  </div>
+</div>
+    </div>
+    <script src="../js/dataConv.js"></script>
+  </body>
+</html>

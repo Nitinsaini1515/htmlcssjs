@@ -119,16 +119,20 @@ body {
   border: 2px solid var(--border-color);
   /* border: 2px solid black; */
   border-radius: 5%;
-  height: auto;
+  height: 80vh;
   margin: 30px auto;
   padding: 30px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
+.calcBox::-webkit-scrollbar {
+  display: none; 
+}
 .calcBox a {
   height: 150px;
   width: 300px;
   padding: 10px;
-  /* font-size: large; */
   font-family: sans-serif;
   border-radius: 10%;
   border: 2px solid var(--border-color);
