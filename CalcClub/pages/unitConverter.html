@@ -4,147 +4,250 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
+    <link rel="stylesheet" href="../style/unitConv.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="lengthContainer">
-        <div class="inputBoxOneDiv">
-          <label for="inputBoxOne">From</label>
-          <input
-            type="number"
-            class="inputBoxOne"
-            id="inputBoxOne"
-            placeholder="Enter length"
-          />
+      <!-- Length Converter -->
+      <div class="containerMain">
+        <div class="leftSide">
+          <h1>Length Converter</h1>
+          <div class="lengthContainer">
+            <div class="inputBoxOneDiv">
+              <label for="inputBoxOne">From</label>
+              <input
+                type="number"
+                class="inputBoxOne"
+                id="inputBoxOne"
+                placeholder="Enter length"
+              />
 
-          <select class="optionsOne">
-            <option value="Meter">Meter (m)</option>
-            <option value="Kilometer">Kilometer (km)</option>
-            <option value="Centimeter">Centimeter (cm)</option>
-            <option value="Millimeter">Millimeter (mm)</option>
-            <option value="Feet">Feet (ft)</option>
-            <option value="Inches">Inches (in)</option>
-            <option value="Miles">Miles (mi)</option>
-          </select>
+              <select class="optionsOne">
+                <option value="Meter">Meter (m)</option>
+                <option value="Kilometer">Kilometer (km)</option>
+                <option value="Centimeter">Centimeter (cm)</option>
+                <option value="Millimeter">Millimeter (mm)</option>
+                <option value="Feet">Feet (ft)</option>
+                <option value="Inches">Inches (in)</option>
+                <option value="Miles">Miles (mi)</option>
+              </select>
+            </div>
+
+            <div class="inputBoxTwoDiv">
+              <label for="inputBoxTwo">To</label>
+              <select class="optionsTwo" id="inputBoxTwo">
+                <option value="Meter">Meter (m)</option>
+                <option value="Kilometer">Kilometer (km)</option>
+                <option value="Centimeter">Centimeter (cm)</option>
+                <option value="Millimeter">Millimeter (mm)</option>
+                <option value="Feet">Feet (ft)</option>
+                <option value="Inches">Inches (in)</option>
+                <option value="Miles">Miles (mi)</option>
+              </select>
+            </div>
+
+            <div class="resultDiv">
+              <button class="resultButton">Convert</button>
+
+              <div class="inputBox">
+                <label for="resultBox">Result</label>
+                <input type="text" id="resultBox" class="resultBox" readonly />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="inputBoxTwoDiv">
-          <label for="inputBoxTwo">To</label>
+        <div class="rightSide">
+          <h1>WEIGHT CONVERSION, MADE SIMPLE</h1>
+          <h2>Measure weight with ease.</h2>
 
-          <select class="optionsTwo" id="inputBoxTwo">
-            <option value="Meter">Meter (m)</option>
-            <option value="Kilometer">Kilometer (km)</option>
-            <option value="Centimeter">Centimeter (cm)</option>
-            <option value="Millimeter">Millimeter (mm)</option>
-            <option value="Feet">Feet (ft)</option>
-            <option value="Inches">Inches (in)</option>
-            <option value="Miles">Miles (mi)</option>
-          </select>
-        </div>
+          <div>
+            Convert weight measurements between kilograms, grams, milligrams,
+            pounds, and ounces quickly and accurately.
+          </div>
 
-        <div class="resultDiv">
-          <button class="resultButton">Convert</button>
+          <br />
 
-          <div class="inputBox">
-            <label for="resultBox">Result</label>
-            <input type="text" id="resultBox" class="resultBox" readonly />
+          <div>
+            Simple. Accurate. Efficient. Your everyday companion for weight
+            conversions.
+          </div>
+
+          <div class="exampleDiv">
+            <div>HOW IT WORKS Example:</div>
+            <p>Convert 5 kilograms to pounds.</p>
+            <p>Select Kilogram (kg) as the From unit.</p>
+            <p>Select Pound (lb) as the To unit.</p>
+            <p>Enter 5 and press Convert.</p>
+            <p>Result: 5 kg = 11.0231 lb</p>
           </div>
         </div>
       </div>
 
-      <!-- weight converter -->
-      <div class="weightConverter">
-        <div class="inputBoxOneDivWeight">
-          <label for="weightInput">From</label>
-          <input
-            type="number"
-            class="weightInput"
-            id="weightInput"
-            placeholder="Enter weight"
-          />
+      <!-- Weight Converter -->
+      <div class="containerMain middleContainer">
+        <div class="leftSide weightLeft ">
+          <h1>Weight Converter</h1>
+          <div class="weightConverter">
+            <div class="inputBoxOneDivWeight">
+              <label for="weightInput">From</label>
+              <input
+                type="number"
+                class="weightInput"
+                id="weightInput"
+                placeholder="Enter weight"
+              />
 
-          <select class="weightOptionsOne">
-            <option value="Kilogram">Kilogram (kg)</option>
-            <option value="Gram">Gram (g)</option>
-            <option value="Milligram">Milligram (mg)</option>
-            <option value="Pound">Pound (lb)</option>
-            <option value="Ounce">Ounce (oz)</option>
-          </select>
+              <select class="weightOptionsOne">
+                <option value="Kilogram">Kilogram (kg)</option>
+                <option value="Gram">Gram (g)</option>
+                <option value="Milligram">Milligram (mg)</option>
+                <option value="Pound">Pound (lb)</option>
+                <option value="Ounce">Ounce (oz)</option>
+              </select>
+            </div>
+
+            <div class="inputBoxTwoDivWeight">
+              <label for="weightOutputUnit">To</label>
+              <select class="weightOptionsTwo" id="weightOutputUnit">
+                <option value="Kilogram">Kilogram (kg)</option>
+                <option value="Gram">Gram (g)</option>
+                <option value="Milligram">Milligram (mg)</option>
+                <option value="Pound">Pound (lb)</option>
+                <option value="Ounce">Ounce (oz)</option>
+              </select>
+            </div>
+
+            <div class="resultDivWeight">
+              <button class="weightResultButton">Convert</button>
+
+              <div class="inputBoxWeight">
+                <label for="weightResultBox">Result</label>
+                <input
+                  type="text"
+                  id="weightResultBox"
+                  class="weightResultBox"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="inputBoxTwoDivWeight">
-          <label for="weightOutputUnit">To</label>
+        <div class="rightSide">
+          <h1>LENGTH CONVERSION, MADE SIMPLE</h1>
+          <h2>Measure distances with ease.</h2>
 
-          <select class="weightOptionsTwo" id="weightOutputUnit">
-            <option value="Kilogram">Kilogram (kg)</option>
-            <option value="Gram">Gram (g)</option>
-            <option value="Milligram">Milligram (mg)</option>
-            <option value="Pound">Pound (lb)</option>
-            <option value="Ounce">Ounce (oz)</option>
-          </select>
-        </div>
+          <div>
+            Convert length measurements between meters, kilometers, centimeters,
+            millimeters, feet, inches, and miles quickly and accurately.
+          </div>
 
-        <div class="resultDivWeight">
-          <button class="weightResultButton">Convert</button>
+          <br />
 
-          <div class="inputBoxWeight">
-            <label for="weightResultBox">Result</label>
-            <input
-              type="text"
-              id="weightResultBox"
-              class="weightResultBox"
-              readonly
-            />
+          <div>
+            Simple. Accurate. Efficient. Your everyday companion for length
+            conversions.
+          </div>
+
+          <div class="exampleDiv">
+            <div>HOW IT WORKS Example:</div>
+            <p>Convert 5 kilometers to miles.</p>
+            <p>Select Kilometer (km) as the From unit.</p>
+            <p>Select Miles (mi) as the To unit.</p>
+            <p>Enter 5 and press Convert.</p>
+            <p>Result: 5 km = 3.10686 mi</p>
           </div>
         </div>
       </div>
 
-      <div class="areaConverter">
-        <div class="inputBoxOneDivArea">
-          <label for="areaInput">From</label>
-          <input
-            type="number"
-            class="areaInput"
-            id="areaInput"
-            placeholder="Enter area"
-          />
+      <!-- Area Converter -->
+      <div class="containerMain">
+        <div class="leftSide">
+          <h1>Area Converter</h1>
+          <div class="areaConverter">
+            <div class="inputBoxOneDivArea">
+              <label for="areaInput">From</label>
+              <input
+                type="number"
+                class="areaInput"
+                id="areaInput"
+                placeholder="Enter area"
+              />
 
-          <select class="areaOptionsOne">
-            <option value="SquareMeter">Square Meter (m²)</option>
-            <option value="SquareKilometer">Square Kilometer (km²)</option>
-            <option value="SquareCentimeter">Square Centimeter (cm²)</option>
-            <option value="SquareMillimeter">Square Millimeter (mm²)</option>
-            <option value="SquareFoot">Square Foot (ft²)</option>
-            <option value="Acre">Acre</option>
-            <option value="Hectare">Hectare (ha)</option>
-          </select>
+              <select class="areaOptionsOne">
+                <option value="SquareMeter">Square Meter (m²)</option>
+                <option value="SquareKilometer">Square Kilometer (km²)</option>
+                <option value="SquareCentimeter">
+                  Square Centimeter (cm²)
+                </option>
+                <option value="SquareMillimeter">
+                  Square Millimeter (mm²)
+                </option>
+                <option value="SquareFoot">Square Foot (ft²)</option>
+                <option value="Acre">Acre</option>
+                <option value="Hectare">Hectare (ha)</option>
+              </select>
+            </div>
+
+            <div class="inputBoxTwoDivArea">
+              <label for="areaOutputUnit">To</label>
+              <select class="areaOptionsTwo" id="areaOutputUnit">
+                <option value="SquareMeter">Square Meter (m²)</option>
+                <option value="SquareKilometer">Square Kilometer (km²)</option>
+                <option value="SquareCentimeter">
+                  Square Centimeter (cm²)
+                </option>
+                <option value="SquareMillimeter">
+                  Square Millimeter (mm²)
+                </option>
+                <option value="SquareFoot">Square Foot (ft²)</option>
+                <option value="Acre">Acre</option>
+                <option value="Hectare">Hectare (ha)</option>
+              </select>
+            </div>
+
+            <div class="resultDivArea">
+              <button class="areaResultButton">Convert</button>
+
+              <div class="inputBoxArea">
+                <label for="areaResultBox">Result</label>
+                <input
+                  type="text"
+                  id="areaResultBox"
+                  class="areaResultBox"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="inputBoxTwoDivArea">
-          <label for="areaOutputUnit">To</label>
+        <div class="rightSide">
+          <h1>AREA CONVERSION, MADE SIMPLE</h1>
+          <h2>Measure spaces with ease.</h2>
 
-          <select class="areaOptionsTwo" id="areaOutputUnit">
-            <option value="SquareMeter">Square Meter (m²)</option>
-            <option value="SquareKilometer">Square Kilometer (km²)</option>
-            <option value="SquareCentimeter">Square Centimeter (cm²)</option>
-            <option value="SquareMillimeter">Square Millimeter (mm²)</option>
-            <option value="SquareFoot">Square Foot (ft²)</option>
-            <option value="Acre">Acre</option>
-            <option value="Hectare">Hectare (ha)</option>
-          </select>
-        </div>
+          <div>
+            Convert area measurements between square meters, square kilometers,
+            square centimeters, square millimeters, square feet, acres, and
+            hectares quickly and accurately.
+          </div>
 
-        <div class="resultDivArea">
-          <button class="areaResultButton">Convert</button>
+          <br />
 
-          <div class="inputBoxArea">
-            <label for="areaResultBox">Result</label>
-            <input
-              type="text"
-              id="areaResultBox"
-              class="areaResultBox"
-              readonly
-            />
+          <div>
+            Simple. Accurate. Efficient. Your everyday companion for area
+            calculations.
+          </div>
+
+          <div class="exampleDiv">
+            <div>HOW IT WORKS Example:</div>
+            <p>Convert 100 square meters to square feet.</p>
+            <p>Select Square Meter (m²) as the From unit.</p>
+            <p>Select Square Foot (ft²) as the To unit.</p>
+            <p>Enter 100 and press Convert.</p>
+            <p>Result: 100 m² = 1076.39 ft²</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #232b37;
+  --secondary-color: #64748b;
+  --text-color: #222222;
+  --background-color: #f8fafc;
+  --text-color-white: #ffffff;
+  --background-color-white: #ffffff;
+  --card-color: #ffffff;
+  --border-color: #e5e5e5;
+}
+
+body {
+  /* background-color: #ffffff; */
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 50px; */
+  /* align-items: center; */
+}
+
+.containerMain {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftSide {
+  border: 2px solid var(--border-color);
+  border-radius: 5%;
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+}
+
+.inputBoxOneDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputBoxOneDiv input,
+.inputBoxOneDivArea input,
+.inputBoxOneDivWeight input {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.inputBoxOneDiv select,
+.inputBoxOneDivArea select,
+.inputBoxOneDivWeight select {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+.inputBoxTwoDiv,
+.inputBoxTwoDivArea,
+.inputBoxTwoDivWeight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.inputBoxTwoDiv input,
+.inputBoxTwoDivArea input,
+.inputBoxTwoDivWeight input {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.inputBoxTwoDiv select,
+.inputBoxTwoDivArea select,
+.inputBoxTwoDivWeight select {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+.resultDiv,
+.resultDivArea,
+.resultDivWeight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.resultDiv button,
+.resultDivArea button,
+.resultDivWeight button {
+  height: 50px;
+  font-size: 15px;
+  /* padding: 20px; */
+  align-content: center;
+  margin-top: 10px;
+  background-color: var(--text-color);
+  color: var(--text-color-white);
+  /* margin-bottom: 10px; */
+}
+.resultDiv input,
+.resultDivArea input,
+.resultDivWeight input {
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  outline: none;
+  background-color: transparent;
+}
+
+.rightSide {
+  padding: 20px;
+  border-radius: 5%;
+  width: 700px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  min-width: 500px;
+}
+
+.exampleDiv {
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.middleContainer{
+  background-color: var(--primary-color);
+}
+ 
+.weightLeft{
+  background-color: var(--background-color-white);
+}
