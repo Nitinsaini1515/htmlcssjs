@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #334155;
+  --primary-color: #232b37;
   --secondary-color: #64748b;
   --text-color: #222222;
   --background-color: #f8fafc;
@@ -86,11 +86,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* */
 .calculatorsDiv {
+  
   height: 900px;
   min-height: 100vh;
   background-color: var(--background-color-white);
+  align-content: center;
 }
 
 .calcHeading {
@@ -142,6 +143,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+.calcBox a:hover{
+  border-color:rgb(236, 85, 85);
+  box-shadow: 0 0 0 3px rgba(red, green, blue, alpha);
 }
 .calcIcon i {
   font-size: 20px;
@@ -153,6 +159,9 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+    height: 100vh;
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
 }
 .unitLeftSide {
   width: 600px;
@@ -167,6 +176,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .percenConv {
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;

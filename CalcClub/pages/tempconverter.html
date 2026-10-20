@@ -4,36 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="../style/tempCalc.css" />
   </head>
   <body>
     <div class="container">
-      <div class="inputBoxOneDiv">
-        <label for="inputBoxOne">From</label>
-        <input
-          type="number"
-          class="inputBoxOne"
-          id="inputBoxOne"
-          placeholder="Enter temperature"
-        />
-        <select class="optionsOne">
-          <option value="Celsius">Celsius (°C)</option>
-          <option value="Fahrenheit">Fahrenheit (°F)</option>
-          <option value="Kelvin">Kelvin (K)</option>
-        </select>
+      <div class="leftSide">
+        <h1>Temperature Calculator</h1>
+        <div class="inputBoxOneDiv">
+          <label for="inputBoxOne">From</label>
+          <input
+            type="number"
+            class="inputBoxOne"
+            id="inputBoxOne"
+            placeholder="Enter temperature"
+          />
+          <select class="optionsOne">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+          </select>
+        </div>
+        <div class="inputBoxTwoDiv">
+          <label for="inputBoxTwo">To</label>
+          <select class="optionsTwo" id="inputBoxTwo">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+          </select>
+        </div>
+        <div class="resultDiv">
+          <button class="resultButton">Calculate</button>
+          <div class="inputBox">
+            <label for="resultBox">Result</label>
+            <input type="text" id="resultBox" class="resultBox" readonly />
+          </div>
+        </div>
       </div>
-      <div class="inputBoxTwoDiv">
-        <label for="inputBoxTwo">To</label>
-        <select class="optionsTwo" id="inputBoxTwo">
-          <option value="Celsius">Celsius (°C)</option>
-          <option value="Fahrenheit">Fahrenheit (°F)</option>
-          <option value="Kelvin">Kelvin (K)</option>
-        </select>
-      </div>
-      <div class="resultDiv">
-        <button class="resultButton">Calculate</button>
-        <div class="inputBox">
-          <label for="resultBox">Result</label>
-          <input type="text" id="resultBox" class="resultBox" readonly />
+      <div class="rightSide">
+        <h1>ADVANCED MATH, MADE SIMPLE</h1>
+        <h2>Solve beyond the basics.</h2>
+        <div>
+          Explore advanced mathematical calculations with CalcClub's Scientific
+          Calculator. From trigonometry and logarithms to powers, roots, and
+          complex expressions, solve problems quickly and accurately.
+        </div>
+        <br />
+        <div>
+          Powerful. Precise. Easy to use. Your everyday companion for advanced
+          mathematics.
+        </div>
+        <div>
+          <div>HOW IT WORKS Example:</div>
+          <p>Calculate sin(30°)</p>
+          <p>Select degree mode (DEG).</p>
+
+          <p>Enter sin(30).</p>
+          <p>Press = to get the result.</p>
+          <p>Result: sin(30°) = 0.5</p>
         </div>
       </div>
     </div>

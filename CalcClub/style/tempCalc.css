@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #232b37;
+  --secondary-color: #64748b;
+  --text-color: #222222;
+  --background-color: #f8fafc;
+  --text-color-white: #ffffff;
+  --background-color-white: #ffffff;
+  --card-color: #ffffff;
+  --border-color: #e5e5e5;
+}
+
+body {
+  /* background-color: #ffffff; */
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+
+.container{
+  display: flex; 
+   justify-content:space-around;
+  align-items: center;
+
+}
+.leftSide{
+  border: 2px solid var(--border-color);
+  border-radius: 5%;
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+}
+
+.inputBoxOneDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputBoxOneDiv input{
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.inputBoxOneDiv select{
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+.inputBoxTwoDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.inputBoxTwoDiv input{
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+.inputBoxTwoDiv select{
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+}
+
+
+
+
+.resultDiv{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.resultDiv button{
+  height: 50px;
+  font-size: 15px;
+/* padding: 20px; */
+align-content: center;
+margin-top: 10px;
+background-color: var(--text-color);
+color: var(--text-color-white);
+/* margin-bottom: 10px; */
+
+}
+.resultDiv input{
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  outline: none;
+  background-color: transparent;
+}
+
+
+.rightSide{
+  padding: 20px;
+  border-radius: 5%;
+  width: 700px;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  min-width: 500px;
+}
+
+.exampleDiv{
+  font-family: 'Courier New', Courier, monospace;
+}
