@@ -47,17 +47,22 @@ const weightObject ={
   Ounce: 0.028349523125
 }
 
-
 weightResultButton.addEventListener("click",()=>{
-if(weightInput.value==""){
+if(weightInput.value<=0){
   alert("Please enter some value")
 }
 const val = weightInput.value
+console.log(val)
 const selectedOne = weightOptionsOne.value
 const selectedTwo = weightOptionsTwo.value
-const kg = val*ansObject[selectedOne]
-const ans = kg/ansObject[selectedTwo]
-weightResultBox.value = ans
+console.log(selectedOne)
+console.log(selectedTwo)
+// console.log(selectedOne)
+const kg = val*weightObject[selectedOne]
+console.log(kg)
+const ans = kg/weightObject[selectedTwo]
+console.log(ans)
+weightResultBox.value = ans.toFixed(2)
 })
 
 
@@ -78,15 +83,15 @@ const areaObject = {
 };
 
 areaResultButton.addEventListener("click",()=>{
-if(areaInput.value==""){
+if(areaInput.value<=0n){
   alert("Please enter some value")
 }
 const val = areaInput.value
 const selectedOne = areaOptionsOne.value
 const selectedTwo = areaOptionsTwo.value
-const squareMeter = val*ansObject[selectedOne]
-const ans = squareMeter/ansObject[selectedTwo]
-areaResultBox.value = ans
+const squareMeter = val*areaObject[selectedOne]
+const ans = squareMeter/areaObject[selectedTwo]
+areaResultBox.value = ans.toFixed(2)
 })
 
 

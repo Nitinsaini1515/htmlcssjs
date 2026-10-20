@@ -15,7 +15,7 @@ resultOne.addEventListener("click",()=>{
   alert("Value is required")
  }
   exp+=String(calcOne(numberOne.value,numberTwo.value));
-  ansBoxOne.value = exp;
+  ansBoxOne.value = Number(exp).toFixed(2);
   exp = ""
 })
 
@@ -41,14 +41,8 @@ resultOnePart.addEventListener("click",()=>{
     alert("Please Enter Some Valid Value")
     return;
   }
-  // const part = Number(numberOne.value);
-  //   const total = Number(numberTwo.value);
-// console.log(part)
-  // console.log(numberOnePart.value)
-  // console.log(numberTwoPart.value)
-  let expOne  = String(caclPart(numberOnePart.value,numberTwoPart.value))
-  console.log(expOne)
-  ansBoxOnePart.value = expOne+"%"
+  let expOne  = Number(caclPart(numberOnePart.value,numberTwoPart.value))
+  ansBoxOnePart.value = expOne.toFixed(2)
 
 })
 
@@ -70,8 +64,8 @@ resultIncDec.addEventListener("click",()=>{
   alert("Value is required")
   return
  }
- let  expIncDec =String(incDecCalc(numberOneIncDec.value,numberTwoIncDec.value));
-  ansBoxIncDec.value = expIncDec;
+ let  expIncDec =Number(incDecCalc(numberOneIncDec.value,numberTwoIncDec.value));
+  ansBoxIncDec.value = expIncDec.toFixed(2);
 })
 
 
@@ -102,5 +96,5 @@ resultDiff.addEventListener("click",()=>{
 
   const expIncDec = diffCalc(numOne, numTwo);
 //  let  expIncDec =String(diffCalc(numberOneDiff.value,numberTwoDiff.value));
-  ansBoxDiff.value = expIncDec;
+  ansBoxDiff.value = Number(expIncDec).toFixed(2);
 })

@@ -1,6 +1,6 @@
 const resultButton = document.querySelector(".resultButton");
 const resultBox = document.querySelector(".resultBox");
-const optionOne = document.querySelector(".optionOne");
+const optionOne = document.querySelector(".optionsOne");
 const inputBoxOne = document.querySelector(".inputBoxOne");
 const optionsTwo = document.querySelector(".optionsTwo");
 

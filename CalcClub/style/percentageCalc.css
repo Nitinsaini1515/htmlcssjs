@@ -190,17 +190,7 @@ body {
   border: 2px solid var(--border-color);
   background-color: transparent;
 }
-/* .containerThree {
-  width: 500px;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  padding: 10px;
-} */
 
-/* .incDecPercentage {
-  display: flex;
-  flex-direction: column;
-} */
 
 .incDecPercentage h3 {
   font-size: x-large;
@@ -252,17 +242,6 @@ body {
 }
 
 
-/* .containerFour {
-  width: 500px;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  padding: 10px;
-} */
-
-/* .diffDiv {
-  display: flex;
-  flex-direction: column;
-} */
 
 .diffDiv h3 {
   font-size: x-large;

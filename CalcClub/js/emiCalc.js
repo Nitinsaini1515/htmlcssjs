@@ -11,16 +11,17 @@ resultButton.addEventListener("click",()=>{
   const amount = loanAmount.value
   const interest = annualInterest.value
   const time = loanTensure.value
-  if(amount==""||interest==""||time==""){
-    alert("Please Enter some value")
+
+    if (amount <= 0 || interest < 0 || time <= 0) {
+    alert("Please enter valid values")
+    return
   }
   const P =  amount
   const R = interest/12/100
   const N = time*12;
-  const emi = R===0?P/N:(P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1)
-  monthlyEmi.value = emi
-  totalPayment.value = emi*N 
-  totalInterest.value = (emi*N)-P
-
-
+  const emi = R===0?
+  P/N:(P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1)
+  monthlyEmi.value = emi.toFixed(2)
+  totalPayment.value = (emi*N).toFixed(2) 
+  totalInterest.value = ((emi*N)-P).toFixed(2)
 })
